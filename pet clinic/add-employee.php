@@ -10,8 +10,8 @@ require_once('./includes/meta.php')
             </div>
             <form method="post" action="" class="employee-form__form">
                 <div class="employee-form__input">
-                    <label for="usn">Name</label>
-                    <input type="text" name="usn" id="usn">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
                 </div>
                 <div class="employee-form__input">
                     <label for="num">Phone Number</label>

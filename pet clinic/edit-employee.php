@@ -14,8 +14,8 @@ require_once('./includes/meta.php')
                     <input type="text" name="id" id="id" disabled>
                 </div>
                 <div class="employee-form__input">
-                    <label for="usn">Name</label>
-                    <input type="text" name="usn" id="usn">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
                 </div>
                 <div class="employee-form__input">
                     <label for="num">Phone Number</label>
