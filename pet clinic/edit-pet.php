@@ -6,7 +6,7 @@ require_once('./includes/meta.php')
     <div class="pet-form-container">
         <div class="pet-form">
             <div class="pet-form__logo">
-                <h1>Edit Employee</h1>
+                <h1>Edit Pet</h1>
             </div>
             <form method="post" action="" class="pet-form__form">
                 <div class="employee-form__input">

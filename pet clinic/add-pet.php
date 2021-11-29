@@ -6,7 +6,7 @@ require_once('./includes/meta.php')
     <div class="employee-form-container">
         <div class="employee-form">
             <div class="employee-form__logo">
-                <h1>Add Employee</h1>
+                <h1>Add Pet</h1>
             </div>
             <form method="post" action="" class="employee-form__form">
                 <div class="employee-form__input">
@@ -25,7 +25,7 @@ require_once('./includes/meta.php')
                     <label for="fileToUpload">Picture</label>
                     <input type="file" name="fileToUpload" id="fileToUpload">
                 </div>
-                <button type="submit">Add Employee</button>
+                <button type="submit">Add Pet</button>
             </form>
         </div>
     </div>
