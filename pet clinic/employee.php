@@ -25,7 +25,7 @@ require_once('./includes/meta.php')
             <div class="employee-crud">
                 <div class="employee-crud__head">
                     <h1>Employee</h1>
-                    <button>Add new employee</button>
+                    <button class="btn">Add new employee</button>
                 </div>
                 <table class="employee-crud__table">
                     <thead>
@@ -38,14 +38,44 @@ require_once('./includes/meta.php')
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Dom</td>
-                            <td>6000</td>
-                        </tr>
-                        <tr class="active-row">
                             <td>Melissa</td>
                             <td>5150</td>
                             <td>Melissa</td>
-                            <td><button>View</button><button>Edit</button><button>Delete</button></td>
+                            <td class="employee-crud__action">
+                                <button class="btn  btn-view">View</button>
+                                <button class="btn">Edit</button>
+                                <button class="btn btn-delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Melissa</td>
+                            <td>5150</td>
+                            <td>Melissa</td>
+                            <td class="employee-crud__action">
+                                <button class="btn  btn-view">View</button>
+                                <button class="btn">Edit</button>
+                                <button class="btn btn-delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Melissa</td>
+                            <td>5150</td>
+                            <td>Melissa</td>
+                            <td class="employee-crud__action">
+                                <button class="btn  btn-view">View</button>
+                                <button class="btn">Edit</button>
+                                <button class="btn btn-delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Melissa</td>
+                            <td>5150</td>
+                            <td>Melissa</td>
+                            <td class="employee-crud__action">
+                                <button class="btn  btn-view">View</button>
+                                <button class="btn">Edit</button>
+                                <button class="btn btn-delete">Delete</button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
