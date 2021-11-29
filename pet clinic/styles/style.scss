@@ -370,3 +370,74 @@ header {
     }
   }
 }
+
+.pet-form-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .pet-form {
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    min-width: 600px;
+    max-width: 650px;
+    border-radius: 10px;
+
+    .pet-form__logo {
+      font-size: 30px;
+      h1 {
+        color: $primary-color;
+        span {
+          background-color: $primary-color;
+          color: white;
+          padding: 5px;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .pet-form__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .pet-form__input {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 10px 0;
+
+        label {
+          margin: 0 0 10px 0;
+          font-size: 18px;
+        }
+        input {
+          padding: 20px;
+          font-size: 20px;
+          border-radius: 10px;
+          border: 1px solid gray;
+          outline: none;
+        }
+      }
+      button {
+        margin: 10px 0;
+        width: 50%;
+        padding: 20px 0;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        background-color: $primary-color;
+        font-size: 30px;
+        color: white;
+      }
+    }
+  }
+}
