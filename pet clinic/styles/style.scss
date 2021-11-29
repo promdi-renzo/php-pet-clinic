@@ -3,42 +3,54 @@ $primary-color-100: #27ae60;
 $primary-color-200: #1abc9c;
 $primary-color: #16a085;
 
+$blue-light: #3498db;
+$blue-dark: #2980b9;
+
+$red-light: #e74c3c;
+$red-dark: #c0392b;
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: Roboto;
 }
-
-.container {
+.title {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-// .home-container {
-//   height: 99vh;
-//   width: 99vw;
-//   margin: 10px;
-//   .home {
-//     height: 100%;
-//     width: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
+.selected {
+  background-color: $primary-color-100;
+}
 
-//     .home__hero {
-//       height: 100%;
-//       width: 100%;
-//       background-color: $primary-color;
-//     }
-//   }
-// }
+.btn {
+  background-color: $primary-color-300;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 21px;
+}
+
+.btn-view {
+  background-color: $blue-light;
+}
+
+.btn-delete {
+  background-color: $red-light;
+}
 
 header {
-  width: 100vw;
+  width: 100%;
+  height: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: $primary-color;
-  padding: 10px 10%;
+  padding: 0 1%;
 
   .logo {
     h1 {
@@ -53,6 +65,12 @@ header {
       li {
         display: inline-block;
         margin: 0 5px;
+        padding: 10px;
+        border-radius: 10px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
       }
     }
   }
@@ -67,6 +85,150 @@ header {
   }
 }
 
+.home-container {
+  height: 100vh;
+  width: 100vw;
+
+  .home {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .home__hero {
+      color: white;
+      padding: 50px;
+      background-color: $primary-color;
+      border-radius: 20px;
+      height: 80%;
+      width: 80%;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        font-size: 50px;
+      }
+
+      .home__hero-content {
+        margin: 20px 0;
+        p {
+          padding: 10px;
+          font-size: 20px;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}
+
+.groom-container {
+  height: 100vh;
+  width: 100vw;
+
+  .groom {
+    height: 90%;
+    .groom-crud {
+      background-color: white;
+      padding: 20px 10%;
+
+      .groom-crud__head {
+        display: flex;
+        justify-content: space-between;
+      }
+      .groom-crud__table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        thead {
+          background-color: $primary-color;
+
+          tr {
+            padding: 10px;
+
+            th {
+              color: white;
+              padding: 10px;
+
+              .employee-crud__action {
+                display: flex;
+                justify-content: space-between;
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              padding: 10px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.employee-container {
+  height: 100vh;
+  width: 100vw;
+
+  .employee {
+    height: 90%;
+    .employee-crud {
+      background-color: white;
+      padding: 20px 10%;
+
+      .employee-crud__head {
+        display: flex;
+        justify-content: space-between;
+      }
+      .employee-crud__table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        thead {
+          background-color: $primary-color;
+
+          tr {
+            padding: 10px;
+
+            th {
+              color: white;
+              padding: 10px;
+
+              .employee-crud__action {
+                display: flex;
+                justify-content: space-between;
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              padding: 10px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .login-container {
   height: 100vh;
   width: 100vw;
@@ -76,14 +238,14 @@ header {
   align-items: center;
 
   .login {
-    padding: 10px;
+    padding: 20px;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
-    min-width: 320px;
-    max-width: 600px;
+    min-width: 600px;
+    max-width: 650px;
     border-radius: 10px;
 
     .login__logo {
@@ -106,6 +268,148 @@ header {
       width: 100%;
 
       .login__input {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 10px 0;
+
+        label {
+          margin: 0 0 10px 0;
+          font-size: 18px;
+        }
+        input {
+          padding: 20px;
+          font-size: 20px;
+          border-radius: 10px;
+          border: 1px solid gray;
+          outline: none;
+        }
+      }
+      button {
+        margin: 10px 0;
+        width: 50%;
+        padding: 20px 0;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        background-color: $primary-color;
+        font-size: 30px;
+        color: white;
+      }
+    }
+  }
+}
+
+.employee-form-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .employee-form {
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    min-width: 600px;
+    max-width: 650px;
+    border-radius: 10px;
+
+    .employee-form__logo {
+      font-size: 30px;
+      h1 {
+        color: $primary-color;
+        span {
+          background-color: $primary-color;
+          color: white;
+          padding: 5px;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .employee-form__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .employee-form__input {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 10px 0;
+
+        label {
+          margin: 0 0 10px 0;
+          font-size: 18px;
+        }
+        input {
+          padding: 20px;
+          font-size: 20px;
+          border-radius: 10px;
+          border: 1px solid gray;
+          outline: none;
+        }
+      }
+      button {
+        margin: 10px 0;
+        width: 50%;
+        padding: 20px 0;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        background-color: $primary-color;
+        font-size: 30px;
+        color: white;
+      }
+    }
+  }
+}
+
+.pet-form-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .pet-form {
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    min-width: 600px;
+    max-width: 650px;
+    border-radius: 10px;
+
+    .pet-form__logo {
+      font-size: 30px;
+      h1 {
+        color: $primary-color;
+        span {
+          background-color: $primary-color;
+          color: white;
+          padding: 5px;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .pet-form__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .pet-form__input {
         display: flex;
         flex-direction: column;
         width: 90%;
