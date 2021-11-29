@@ -25,6 +25,10 @@ require_once('./includes/meta.php')
                     <label for="psw">Password</label>
                     <input type="password" name="psw" id="psw">
                 </div>
+                <div class="employee-form__input">
+                    <label for="fileToUpload">Picture</label>
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                </div>
                 <button type="submit">Update Employee</button>
             </form>
         </div>
