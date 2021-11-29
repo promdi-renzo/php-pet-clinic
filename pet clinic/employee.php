@@ -6,7 +6,7 @@ require_once('./includes/meta.php')
     <div class="employee-container">
         <header>
             <div class="logo">
-                <h1>今日は</h1>
+                <h1 class="title">ペットクリニック</h1>
             </div>
             <nav>
                 <ul>
@@ -24,7 +24,7 @@ require_once('./includes/meta.php')
         <div class="employee">
             <div class="employee-crud">
                 <div class="employee-crud__head">
-                    <h1>Employee</h1>
+                    <h1 class="title">Employee</h1>
                     <button class="btn">Add new employee</button>
                 </div>
                 <table class="employee-crud__table">
@@ -38,9 +38,9 @@ require_once('./includes/meta.php')
                     </thead>
                     <tbody>
                         <tr>
+                            <td>1</td>
                             <td>Melissa</td>
-                            <td>5150</td>
-                            <td>Melissa</td>
+                            <td>09989887654</td>
                             <td class="employee-crud__action">
                                 <button class="btn  btn-view">View</button>
                                 <button class="btn">Edit</button>
@@ -48,9 +48,9 @@ require_once('./includes/meta.php')
                             </td>
                         </tr>
                         <tr>
+                            <td>1</td>
                             <td>Melissa</td>
-                            <td>5150</td>
-                            <td>Melissa</td>
+                            <td>09989887654</td>
                             <td class="employee-crud__action">
                                 <button class="btn  btn-view">View</button>
                                 <button class="btn">Edit</button>
@@ -58,19 +58,9 @@ require_once('./includes/meta.php')
                             </td>
                         </tr>
                         <tr>
+                            <td>1</td>
                             <td>Melissa</td>
-                            <td>5150</td>
-                            <td>Melissa</td>
-                            <td class="employee-crud__action">
-                                <button class="btn  btn-view">View</button>
-                                <button class="btn">Edit</button>
-                                <button class="btn btn-delete">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Melissa</td>
-                            <td>5150</td>
-                            <td>Melissa</td>
+                            <td>09989887654</td>
                             <td class="employee-crud__action">
                                 <button class="btn  btn-view">View</button>
                                 <button class="btn">Edit</button>

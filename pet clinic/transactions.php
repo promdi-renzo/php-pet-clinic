@@ -6,7 +6,7 @@ require_once('./includes/meta.php')
     <div class="employee-container">
         <header>
             <div class="logo">
-                <h1>今日は</h1>
+                <h1 class="title">ペットクリニック</h1>
             </div>
             <nav>
                 <ul>

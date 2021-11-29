@@ -6,7 +6,7 @@ require_once('./includes/meta.php')
     <div class="employee-container">
         <header>
             <div class="logo">
-                <h1>今日は</h1>
+                <h1 class="title">ペットクリニック</h1>
             </div>
             <nav>
                 <ul>
@@ -24,7 +24,7 @@ require_once('./includes/meta.php')
         <div class="employee">
             <div class="employee-crud">
                 <div class="employee-crud__head">
-                    <h1>Pets</h1>
+                    <h1 class="title">Pets</h1>
                     <button class="btn">Add new pet</button>
                 </div>
                 <table class="employee-crud__table">

@@ -6,7 +6,7 @@ require_once('./includes/meta.php')
     <div class="home-container">
         <header>
             <div class="logo">
-                <h1>今日は</h1>
+                <h1>ペットクリニック</h1>
             </div>
             <nav>
                 <ul>
@@ -23,7 +23,7 @@ require_once('./includes/meta.php')
 
         <div class="home">
             <div class="home__hero">
-                <h1>Pet Clinic, よこぞ</h1>
+                <h1 class="title">ペットクリニック, よこぞ!</h1>
                 <div class="home__hero-content">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Eius, iure quos. Eos voluptates sint qui.

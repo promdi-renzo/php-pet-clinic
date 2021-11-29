@@ -6,18 +6,18 @@ require_once('./includes/meta.php')
     <div class="login-container">
         <div class="login">
             <div class="login__logo">
-                <h1>Pet <span>Clinic</span> </h1>
+                <h1>ペット<span>クリニック</span> </h1>
             </div>
             <form method="post" action="" class="login__form">
                 <div class="login__input">
-                    <label for="usn">Username</label>
+                    <label for="usn">ユーザー名</label>
                     <input type="text" name="usn" id="usn">
                 </div>
                 <div class="login__input">
-                    <label for="psw">Password</label>
+                    <label for="psw">パスワード</label>
                     <input type="password" name="psw" id="psw">
                 </div>
-                <button type="submit">Login</button>
+                <button type="submit">ログイン</button>
             </form>
         </div>
     </div>
