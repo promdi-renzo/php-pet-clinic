@@ -10,11 +10,11 @@ require_once('./includes/meta.php')
             </div>
             <nav>
                 <ul>
-                    <li class="selected">Home</li>
-                    <li>Pet</li>
-                    <li>Employee</li>
-                    <li>Grooming Services</li>
-                    <li>Transaction</li>
+                    <li class="selected"> <a href="home.php">Home</a></li>
+                    <li><a href="pet.php">Pets</a></li>
+                    <li><a href="employee.php">Employee</a></li>
+                    <li><a href="grooming-services.php">Grooming Services</a></li>
+                    <li><a href="transactions.php">Transaction</a></li>
                 </ul>
             </nav>
 

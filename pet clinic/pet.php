@@ -3,10 +3,109 @@ require_once('./includes/meta.php')
 ?>
 
 <body>
-    <?php
-    require_once('./components/header.php')
-    ?>
+    <div class="employee-container">
+        <header>
+            <div class="logo">
+                <h1>今日は</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.php">Home</a></li>
+                    <li class="selected"><a href="pet.php">Pets</a></li>
+                    <li><a href="employee.php">Employee</a></li>
+                    <li><a href="grooming-services.php">Grooming Services</a></li>
+                    <li><a href="transactions.php">Transaction</a></li>
+                </ul>
+            </nav>
 
+            <button class="btn">Contact Us</button>
+        </header>
+
+        <div class="employee">
+            <div class="employee-crud">
+                <div class="employee-crud__head">
+                    <h1>Pets</h1>
+                    <button class="btn">Add new pet</button>
+                </div>
+                <table class="employee-crud__table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Breed</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Spy</td>
+                            <td>7</td>
+                            <td>Female</td>
+                            <td>Rottweiler</td>
+                            <td class="employee-crud__action">
+                                <button class="btn  btn-view">View</button>
+                                <button class="btn">Edit</button>
+                                <button class="btn btn-delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Spy</td>
+                            <td>7</td>
+                            <td>Female</td>
+                            <td>Rottweiler</td>
+                            <td class="employee-crud__action">
+                                <button class="btn  btn-view">View</button>
+                                <button class="btn">Edit</button>
+                                <button class="btn btn-delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Spy</td>
+                            <td>7</td>
+                            <td>Female</td>
+                            <td>Rottweiler</td>
+                            <td class="employee-crud__action">
+                                <button class="btn  btn-view">View</button>
+                                <button class="btn">Edit</button>
+                                <button class="btn btn-delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Spy</td>
+                            <td>7</td>
+                            <td>Female</td>
+                            <td>Rottweiler</td>
+                            <td class="employee-crud__action">
+                                <button class="btn  btn-view">View</button>
+                                <button class="btn">Edit</button>
+                                <button class="btn btn-delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Spy</td>
+                            <td>7</td>
+                            <td>Female</td>
+                            <td>Rottweiler</td>
+                            <td class="employee-crud__action">
+                                <button class="btn  btn-view">View</button>
+                                <button class="btn">Edit</button>
+                                <button class="btn btn-delete">Delete</button>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
