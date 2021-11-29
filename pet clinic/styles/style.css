@@ -6,6 +6,13 @@
   font-family: Roboto;
 }
 
+.title {
+  background-color: #16a085;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 .selected {
   background-color: #27ae60;
 }
@@ -40,7 +47,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: #16a085;
-  padding: 0 10%;
+  padding: 0 1%;
 }
 
 header .logo h1 {
@@ -128,6 +135,67 @@ header button {
   letter-spacing: 2px;
 }
 
+.groom-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.groom-container .groom {
+  height: 90%;
+}
+
+.groom-container .groom .groom-crud {
+  background-color: white;
+  padding: 20px 10%;
+}
+
+.groom-container .groom .groom-crud .groom-crud__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.groom-container .groom .groom-crud .groom-crud__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.groom-container .groom .groom-crud .groom-crud__table thead {
+  background-color: #16a085;
+}
+
+.groom-container .groom .groom-crud .groom-crud__table thead tr {
+  padding: 10px;
+}
+
+.groom-container .groom .groom-crud .groom-crud__table thead tr th {
+  color: white;
+  padding: 10px;
+}
+
+.groom-container .groom .groom-crud .groom-crud__table thead tr th .employee-crud__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.groom-container .groom .groom-crud .groom-crud__table tbody tr td {
+  padding: 10px;
+  text-align: center;
+}
+
 .employee-container {
   height: 100vh;
   width: 100vw;
@@ -205,7 +273,7 @@ header button {
 }
 
 .login-container .login {
-  padding: 10px;
+  padding: 20px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,8 +286,8 @@ header button {
       -ms-flex-align: center;
           align-items: center;
   width: 50%;
-  min-width: 320px;
-  max-width: 500px;
+  min-width: 600px;
+  max-width: 650px;
   border-radius: 10px;
 }
 
@@ -278,6 +346,106 @@ header button {
 }
 
 .login-container .login .login__form button {
+  margin: 10px 0;
+  width: 50%;
+  padding: 20px 0;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background-color: #16a085;
+  font-size: 30px;
+  color: white;
+}
+
+.employee-form-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #16a085;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.employee-form-container .employee-form {
+  padding: 20px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  min-width: 600px;
+  max-width: 650px;
+  border-radius: 10px;
+}
+
+.employee-form-container .employee-form .employee-form__logo {
+  font-size: 30px;
+}
+
+.employee-form-container .employee-form .employee-form__logo h1 {
+  color: #16a085;
+}
+
+.employee-form-container .employee-form .employee-form__logo h1 span {
+  background-color: #16a085;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.employee-form-container .employee-form .employee-form__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.employee-form-container .employee-form .employee-form__form .employee-form__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: 10px 0;
+}
+
+.employee-form-container .employee-form .employee-form__form .employee-form__input label {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.employee-form-container .employee-form .employee-form__form .employee-form__input input {
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  outline: none;
+}
+
+.employee-form-container .employee-form .employee-form__form button {
   margin: 10px 0;
   width: 50%;
   padding: 20px 0;

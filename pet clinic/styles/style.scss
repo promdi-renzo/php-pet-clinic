@@ -15,6 +15,12 @@ $red-dark: #c0392b;
   margin: 0;
   font-family: Roboto;
 }
+.title {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
 
 .selected {
   background-color: $primary-color-100;
@@ -44,7 +50,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: $primary-color;
-  padding: 0 10%;
+  padding: 0 1%;
 
   .logo {
     h1 {
@@ -117,6 +123,59 @@ header {
   }
 }
 
+.groom-container {
+  height: 100vh;
+  width: 100vw;
+
+  .groom {
+    height: 90%;
+    .groom-crud {
+      background-color: white;
+      padding: 20px 10%;
+
+      .groom-crud__head {
+        display: flex;
+        justify-content: space-between;
+      }
+      .groom-crud__table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        thead {
+          background-color: $primary-color;
+
+          tr {
+            padding: 10px;
+
+            th {
+              color: white;
+              padding: 10px;
+
+              .employee-crud__action {
+                display: flex;
+                justify-content: space-between;
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              padding: 10px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .employee-container {
   height: 100vh;
   width: 100vw;
@@ -179,14 +238,14 @@ header {
   align-items: center;
 
   .login {
-    padding: 10px;
+    padding: 20px;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
-    min-width: 320px;
-    max-width: 500px;
+    min-width: 600px;
+    max-width: 650px;
     border-radius: 10px;
 
     .login__logo {
@@ -209,6 +268,77 @@ header {
       width: 100%;
 
       .login__input {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 10px 0;
+
+        label {
+          margin: 0 0 10px 0;
+          font-size: 18px;
+        }
+        input {
+          padding: 20px;
+          font-size: 20px;
+          border-radius: 10px;
+          border: 1px solid gray;
+          outline: none;
+        }
+      }
+      button {
+        margin: 10px 0;
+        width: 50%;
+        padding: 20px 0;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        background-color: $primary-color;
+        font-size: 30px;
+        color: white;
+      }
+    }
+  }
+}
+
+.employee-form-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .employee-form {
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    min-width: 600px;
+    max-width: 650px;
+    border-radius: 10px;
+
+    .employee-form__logo {
+      font-size: 30px;
+      h1 {
+        color: $primary-color;
+        span {
+          background-color: $primary-color;
+          color: white;
+          padding: 5px;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .employee-form__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .employee-form__input {
         display: flex;
         flex-direction: column;
         width: 90%;
