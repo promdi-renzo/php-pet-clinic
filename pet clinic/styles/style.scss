@@ -1,0 +1,139 @@
+$primary-color-300: #2ecc71;
+$primary-color-100: #27ae60;
+$primary-color-200: #1abc9c;
+$primary-color: #16a085;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+}
+
+.container {
+}
+
+// .home-container {
+//   height: 99vh;
+//   width: 99vw;
+//   margin: 10px;
+//   .home {
+//     height: 100%;
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     .home__hero {
+//       height: 100%;
+//       width: 100%;
+//       background-color: $primary-color;
+//     }
+//   }
+// }
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color;
+  padding: 10px 10%;
+
+  .logo {
+    h1 {
+      color: white;
+    }
+  }
+
+  nav {
+    color: white;
+    ul {
+      list-style-type: none;
+      li {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+
+  button {
+    background-color: $primary-color-300;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 21px;
+  }
+}
+
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .login {
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    min-width: 320px;
+    max-width: 600px;
+    border-radius: 10px;
+
+    .login__logo {
+      font-size: 30px;
+      h1 {
+        color: $primary-color;
+        span {
+          background-color: $primary-color;
+          color: white;
+          padding: 5px;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .login__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .login__input {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 10px 0;
+
+        label {
+          margin: 0 0 10px 0;
+          font-size: 18px;
+        }
+        input {
+          padding: 20px;
+          font-size: 20px;
+          border-radius: 10px;
+          border: 1px solid gray;
+          outline: none;
+        }
+      }
+      button {
+        margin: 10px 0;
+        width: 50%;
+        padding: 20px 0;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        background-color: $primary-color;
+        font-size: 30px;
+        color: white;
+      }
+    }
+  }
+}

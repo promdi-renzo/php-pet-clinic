@@ -1,0 +1,93 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  width: 50%;
+  min-width: 320px;
+  max-width: 1000px;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.login-container .login .login__logo {
+  background-color: red;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.login-container .login .login__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.login-container .login .login__form .login__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: 10px 0;
+}
+
+.login-container .login .login__form .login__input label {
+  margin: 0 0 5px 0;
+}
+
+.login-container .login .login__form .login__input input {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.login-container .login .login__form button {
+  width: 30%;
+  padding: 10px 0;
+  margin: 10px 0;
+  border: none;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
