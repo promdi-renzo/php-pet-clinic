@@ -1,5 +1,8 @@
 <?php
-require_once('./includes/meta.php')
+require('./includes/meta.php');
+require('./includes/db_config.php');
+
+$result = mysqli_query($mysqli, "SELECT * FROM pet");
 ?>
 
 <body>
@@ -39,7 +42,24 @@ require_once('./includes/meta.php')
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+
+                        <?php
+
+                        while ($res = mysqli_fetch_array($result)) {
+                            echo "<tr>";
+                            echo "<td>" . $res['idpet'] . "</td>";
+                            echo "<td>" . $res['name'] . "</td>";
+                            echo "<td>" . $res['age'] . "</td>";
+                            echo "<td>" . $res['gender'] . "</td>";
+                            echo "<td>" . $res['breed'] . "</td>";
+                            echo "<td class=`employee-crud__action`>
+                                <button class=`btn  btn-view`>View</button>
+                                <button class=`btn`>Edit</button>
+                                <button class=`btn btn-delete`>Delete</button>
+                                </td>";
+                        }
+                        ?>
+                        <!-- <tr>
                             <td>1</td>
                             <td>Spy</td>
                             <td>7</td>
@@ -98,7 +118,7 @@ require_once('./includes/meta.php')
                                 <button class="btn">Edit</button>
                                 <button class="btn btn-delete">Delete</button>
                             </td>
-                        </tr>
+                        </tr> -->
 
 
                     </tbody>

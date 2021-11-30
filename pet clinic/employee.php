@@ -1,5 +1,9 @@
 <?php
-require_once('./includes/meta.php')
+require('./includes/meta.php');
+require('./includes/db_config.php');
+
+$result = mysqli_query($mysqli, "SELECT * FROM employee");
+
 ?>
 
 <body>
@@ -37,7 +41,21 @@ require_once('./includes/meta.php')
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <?php
+
+                        while ($res = mysqli_fetch_array($result)) {
+                            echo "<tr>";
+                            echo "<td>" . $res['idemployee'] . "</td>";
+                            echo "<td>" . $res['name'] . "</td>";
+                            echo "<td>" . $res['number'] . "</td>";
+                            echo "<td class=`employee-crud__action`>
+                                <button class=`btn  btn-view`>View</button>
+                                <button class=`btn`>Edit</button>
+                                <button class=`btn btn-delete`>Delete</button>
+                                </td>";
+                        }
+                        ?>
+                        <!-- <tr>
                             <td>1</td>
                             <td>Melissa</td>
                             <td>09989887654</td>
@@ -66,7 +84,7 @@ require_once('./includes/meta.php')
                                 <button class="btn">Edit</button>
                                 <button class="btn btn-delete">Delete</button>
                             </td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
             </div>

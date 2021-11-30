@@ -8,7 +8,7 @@ require_once('./includes/meta.php')
             <div class="employee-form__logo">
                 <h1>Add Employee</h1>
             </div>
-            <form method="post" action="" class="employee-form__form">
+            <form method="post" action="./scripts/addEmployee.php" class="employee-form__form">
                 <div class="employee-form__input">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name">
@@ -22,10 +22,10 @@ require_once('./includes/meta.php')
                     <input type="password" name="psw" id="psw">
                 </div>
                 <div class="employee-form__input">
-                    <label for="fileToUpload">Picture</label>
-                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <label for="file">Picture</label>
+                    <input type="file" name="file" id="file">
                 </div>
-                <button type="submit">Add Employee</button>
+                <button type="submit" name="Submit">Add Employee</button>
             </form>
         </div>
     </div>
